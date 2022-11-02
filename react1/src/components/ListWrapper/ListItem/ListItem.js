@@ -5,7 +5,7 @@ import danabramovImage from '/Users/jakub/Desktop/Web Development/ReactApp/React
 
 const ListItem = () => (
 <li className="listItem__wrapper">
-    <img src={danabramovImage}></img>
+    <img className="listItem__image" src={danabramovImage}></img>
     <div>
         <h2 className="listItem__name">Dan Abramov</h2>
         <h2 className="listItem__description">exapmple</h2>
