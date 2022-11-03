@@ -1,12 +1,13 @@
 .listItem__wrapper {
 list-style: none;
-padding: 0%;
-margin: 0;
+padding: 50px 30px ;
 display: flex;
 align-items: center;
 }
 
 .listItem__image {
+flex-shrink: 0;    
+margin-right: 30px;
 width: 150px;
 height: 150px;
 border-radius: 50%;
@@ -20,6 +21,7 @@ margin: 0%;
 
 .listItem__description {
 font-weight: 300;
+margin: 10px 0 20px;
 }
 
 .listItem__button {
@@ -28,4 +30,7 @@ background: none;
 border: 2px solid #1E58FF;
 color: #1E58FF;
 padding: 7px 12px;   
+font-size: 10px;
+text-decoration: none;
+
 }
