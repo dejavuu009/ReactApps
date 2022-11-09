@@ -40,12 +40,30 @@ state = {
 
 }
 
+addItem = (e) => {
+e.preventDefault();
+
+const newItem = {
+    name: e.target[0].value,
+    twitterLink:e.target[1].value, 
+    image:e.target[2].value,
+    description:e.target[3].value, 
+}
+
+this.setState(prevState =>({
+    items:[...prevState.items, newItem],
+}));
+e.target.reset();
+
+}
+
+
 render() {
     return(
         <div>
         
         <ListWrapper items={this.state.items}></ListWrapper>
-        <Form></Form>
+        <Form submitFn ={this.addItem}></Form>
         
         
 
