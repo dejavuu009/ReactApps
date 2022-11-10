@@ -1,57 +1,42 @@
 import React from 'react';
 import styles from './Form.module.scss'; 
+import Input from '../Input/Input';
+import Title from '../Title/Title';
+import Button from '../Button/Button';
+
+
 
 const Form = ({submitFn}) => (
-    <div className="form__wrapper">
-        <h2>Add new twitter account</h2>
+    <div className={styles.wrapper}>
+        <Title>Add new twitter account</Title>
         <form 
-            className="form__form" 
+            className={styles.form} 
             onSubmit={submitFn}
         >
-            <div className="form__item">
-                <input 
-                    type="text" 
-                    name="name" 
-                    id="name" placeholder=" " maxLength="30"
-                />
-                <label htmlFor="name">Name</label>
-                <div className="forms__item__bar"></div>
-            </div>
-            <div className="form__item">
-                <input
-                    type="text"
-                    name="link"
-                    id="link" placeholder=" "
-                    
-                />
-                <label htmlFor="link">Link</label>
-                <div className="forms__item__bar"></div>
-            </div>
-            <div className="form__item">
-                <input
-                    type="text"
-                    name="image"
-                    id="image" 
-                    placeholder=" " 
-                />
-                <label htmlFor="image">Image</label>
-                <div className="forms__item__bar"></div>
-            </div>
-            <div className="form__item">
-                <textarea
-                    name="description"
-                    id="description"
-                    placeholder=" "
-                />
-                <label htmlFor="description">Description</label>
-                <div className="forms__item__bar"></div>
-            </div>
-            <button 
-                className="form__button"
-                type="submit"
-            >
-                add new item
-            </button>
+        <Input
+            name='name'
+            label='name'
+            maxLength={30}
+
+        />
+        <Input
+            name='link'
+            label='Twitter Link'
+
+        />
+        <Input
+            name='image'
+            label='image'
+
+        />
+        <Input
+            tag='textarea'
+            name='description'
+            label='description'
+            maxLength={300}
+
+        />
+        <Button>add new item</Button>
         </form>
     </div>
 );

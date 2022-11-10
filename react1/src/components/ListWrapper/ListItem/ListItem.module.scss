@@ -1,11 +1,11 @@
-.listItem__wrapper {
+.wrapper {
 list-style: none;
 padding: 50px 30px ;
 display: flex;
 align-items: center;
 }
 
-.listItem__image {
+.image {
 flex-shrink: 0;    
 margin-right: 30px;
 width: 150px;
@@ -13,18 +13,13 @@ height: 150px;
 border-radius: 50%;
 }
 
-.listItem__name {
-color: #1E58FF;
-font-weight: 700;
-margin: 0%;
-}
+.description {
+    font-weight: 300;
+    margin: 10px 0 20px;
+    }
 
-.listItem__description {
-font-weight: 300;
-margin: 10px 0 20px;
-}
 
-.listItem__button {
+.button {
 font-weight: 500;
 background: none;
 border: 2px solid #1E58FF;
