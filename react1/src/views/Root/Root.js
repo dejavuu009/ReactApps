@@ -48,8 +48,8 @@ class Root extends React.Component {
       <Navigation/>
       <h1>hello</h1>
       <Routes>
-          <Route exact path="/" element={<TwittersView />} />
-          <Route path="/articles" element={<ArticlesView/>} />
+          <Route  path="/" element={<TwittersView />} />
+          <Route exact path="/articles" element={<ArticlesView/>} />
           <Route path="/notes" element={<NotesView/>} />
       </Routes>
       </BrowserRouter>

@@ -1,0 +1,21 @@
+.wrapper{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.navItem{
+list-style: none;
+text-decoration: none;
+
+&Link {
+    text-decoration: none;
+    color: #818181;
+
+    &Active{
+        text-decoration: none;
+        font-weight: 700;
+        color: #1e58ff;
+     }
+    }
+}
+
