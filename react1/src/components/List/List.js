@@ -1,13 +1,18 @@
 import React from "react";
 import ListItem from "./ListItem";
 import styles from "./List.module.scss";
+import {twitterAccounts} from "../../data/twitterAccounts";
 
-const List = props => (
-  <ul className={styles.wrapper}>
-    {props.items.map(item => (
+const List = () => {
+  return( 
+    <>
+     <ul className={styles.wrapper}>
+    {twitterAccounts.map(item => (
       <ListItem key={item.name} {...item} />
     ))}
   </ul>
-);
+  </>
+  )
+};
 
 export default List;

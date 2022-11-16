@@ -2,6 +2,8 @@ import React from 'react';
 
 import Root from './views/Root/Root';
 import ReactDOM from 'react-dom/client'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 /* OLD RENDER V5 */
 /*import ReactDOM from 'react-dom';*/

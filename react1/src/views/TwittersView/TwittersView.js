@@ -1,7 +1,15 @@
-import React from 'react';
+import List from "../../components/List/List";
 
-const TwittersView = () => (
-  <p>This is an Twitters View</p>
-);
+
+
+const TwittersView = () => {
+  return(  
+  <>
+    <List/>  
+
+  </>
+    )
+
+};
 
 export default TwittersView;
