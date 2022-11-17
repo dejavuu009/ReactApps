@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Form from '../Form/Form';
+import Form from '../Form/Form'
+
 import { twitterAccounts } from '../../data/twitterAccounts';
 
 
@@ -38,14 +39,14 @@ const addItem = e => {
   //    ...prevState.items, newItem
   // }));
 
-  
-  this.setState((items) => {
-   return {items, newItem}
- });
+  setData(newItem)
+  console.log(data)
+
+ 
 
 
 
-  e.target.reset();
+  // e.target.reset();
 };
 
   return(
@@ -68,7 +69,7 @@ const addItem = e => {
         <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>
-        <Button variant="primary" onClick={handleSubmit} >
+        <Button variant="primary" onClick={addItem} >
           Save Changes
         </Button>
       </Modal.Footer>
