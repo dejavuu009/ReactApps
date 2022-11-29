@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Form from '../Form/Form'
+import MyForm from '../Form/MyForm'
 
 // import { twitterAccounts } from '../../data/twitterAccounts';
 
@@ -19,7 +19,10 @@ const MyModal = () => {
   const handleShow = () => setShow(true);
   
 
-
+// const handleSubmitButton = () => {
+//   handleClose();
+//   console.log('works');
+// };
 
 // const addItem = e => {
 //   // e.preventDefault();
@@ -54,7 +57,7 @@ const MyModal = () => {
         <Modal.Title>add new item</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-      <Form/>
+      <MyForm/>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
