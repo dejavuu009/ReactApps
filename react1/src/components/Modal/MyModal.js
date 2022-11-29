@@ -45,9 +45,7 @@ const MyModal = () => {
   return(
     <>
     <Button
-  
-
-     variant="primary" onClick={handleShow}>
+     variant="primary" size='sm' onClick={handleShow}>
       add new item
     </Button>
 

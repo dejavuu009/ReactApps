@@ -32,7 +32,7 @@ const descriptionChangeHandler = (event) => {
     
     const expenseData = {
       title: enteredTitle,
-      link: enteredLink,
+      twitterLink: enteredLink,
       image: enteredImage,
       description: enteredDescription,
       
@@ -46,32 +46,27 @@ const descriptionChangeHandler = (event) => {
   <div className={styles.wrapper}>
     <Title>Add new twitter account</Title>
     <form id="my-form" autoComplete="off" className={styles.form} onSubmit={titleChange} >
-    <div>
+    <div className={styles.form}>
     <label>Name</label>
       <input type='text' value={enteredTitle} onChange={titleChangeHandler}  >
-        
       </input>
     </div>
-    <div>
+    <div className={styles.form}>
     <label>link</label>
       <input type='text' value={enteredLink} onChange={linkChangeHandler} >
       </input>
     </div>
-    <div>
+    <div className={styles.form}>
     <label>img</label>
       <input type='text' value={enteredImage} onChange={imageChangeHandler} >
-
-
       </input>
     </div>
-    <div>
+    <div className={styles.form}>
     <label>description</label>
       <input type='text'value={enteredDescription} onChange={descriptionChangeHandler} >
-
       </input>
     </div> 
 
-      <button type="submit">click me</button>
     </form>
   </div>
   )
